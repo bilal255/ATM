@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace atmUI
 {
-    public partial class Form3 : Form
+    public partial class AccForm : Form
     {
-        public Form3()
+        public AccForm()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            QueryForm Q = new QueryForm();
+            Q.Show();
         }
     }
 }

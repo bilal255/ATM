@@ -24,3 +24,19 @@ E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form2.resources
 E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form3.resources
 E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form4.resources
 E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form5.resources
+E:\DBMS Project\ATM\atmUI\atmUI\bin\Debug\atmUI.exe.config
+E:\DBMS Project\ATM\atmUI\atmUI\bin\Debug\atmUI.exe
+E:\DBMS Project\ATM\atmUI\atmUI\bin\Debug\atmUI.pdb
+E:\DBMS Project\ATM\atmUI\atmUI\bin\Debug\Bunifu_UI_v1.52.dll
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.csprojAssemblyReference.cache
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.Form5.resources
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.Properties.Resources.resources
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.csproj.GenerateResource.cache
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.csproj.CoreCompileInputs.cache
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.csproj.CopyComplete
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.exe
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.pdb
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.LoginForm.resources
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.PinForm.resources
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.AccForm.resources
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.QueryForm.resources

@@ -1,6 +1,6 @@
 ﻿namespace atmUI
 {
-    partial class Form2
+    partial class PinForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PinForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.submitButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.MinPicBox = new System.Windows.Forms.PictureBox();
+            this.ClosePicBox = new System.Windows.Forms.PictureBox();
+            this.MaxPicBox = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -76,31 +85,80 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "PIN";
             // 
-            // button1
+            // submitButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(321, 227);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(73, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.submitButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.submitButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.Location = new System.Drawing.Point(321, 227);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(73, 32);
+            this.submitButton.TabIndex = 4;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = false;
+            this.submitButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form2
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(55)))));
+            this.panel1.Controls.Add(this.MinPicBox);
+            this.panel1.Controls.Add(this.ClosePicBox);
+            this.panel1.Controls.Add(this.MaxPicBox);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 36);
+            this.panel1.TabIndex = 6;
+            // 
+            // MinPicBox
+            // 
+            this.MinPicBox.Image = ((System.Drawing.Image)(resources.GetObject("MinPicBox.Image")));
+            this.MinPicBox.Location = new System.Drawing.Point(680, 0);
+            this.MinPicBox.Name = "MinPicBox";
+            this.MinPicBox.Size = new System.Drawing.Size(36, 36);
+            this.MinPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.MinPicBox.TabIndex = 6;
+            this.MinPicBox.TabStop = false;
+            // 
+            // ClosePicBox
+            // 
+            this.ClosePicBox.BackColor = System.Drawing.Color.Transparent;
+            this.ClosePicBox.Image = ((System.Drawing.Image)(resources.GetObject("ClosePicBox.Image")));
+            this.ClosePicBox.Location = new System.Drawing.Point(764, 0);
+            this.ClosePicBox.Name = "ClosePicBox";
+            this.ClosePicBox.Size = new System.Drawing.Size(36, 36);
+            this.ClosePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ClosePicBox.TabIndex = 6;
+            this.ClosePicBox.TabStop = false;
+            // 
+            // MaxPicBox
+            // 
+            this.MaxPicBox.Image = ((System.Drawing.Image)(resources.GetObject("MaxPicBox.Image")));
+            this.MaxPicBox.Location = new System.Drawing.Point(722, 0);
+            this.MaxPicBox.Name = "MaxPicBox";
+            this.MaxPicBox.Size = new System.Drawing.Size(36, 36);
+            this.MaxPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.MaxPicBox.TabIndex = 6;
+            this.MaxPicBox.TabStop = false;
+            // 
+            // PinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.submitButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "PinForm";
+            this.Load += new System.EventHandler(this.PinForm_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,6 +170,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox MinPicBox;
+        private System.Windows.Forms.PictureBox ClosePicBox;
+        private System.Windows.Forms.PictureBox MaxPicBox;
     }
 }

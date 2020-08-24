@@ -117,4 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MinPicBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAACJJREFUOE9j
+        GAWjYCSAHiBeQCIG6cEJqG7gKBgFwwAwMAAAUZYRMSmTE2AAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ClosePicBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAGtJREFUOE9j
+        GAU0A8ZQGh8gRg0YmADxXyBOB/OwA5AcSA1ILVEgGYj/AHE2mIcKUoAYJJcF5pEAsBlKtmEwgGwoxYbB
+        ACy8CIUr0YCqBiJ7E19EEQWwhRnZhuKLAJINpUnCpmrWGwWkAAYGABCSIjVypk/1AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="MaxPicBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAD5JREFUOE9j
+        GAVHgPgBiRikBycAKZgDxAlEYpBakB6cACQJUkgsAKkdNRAVjBpIEAwTA6ma9aheOAx7wMAAAHUfPoF+
+        3yzqAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

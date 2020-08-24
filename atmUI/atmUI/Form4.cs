@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace atmUI
 {
-    public partial class Form4 : Form
+    public partial class QueryForm : Form
     {
-        public Form4()
+        public QueryForm()
         {
             InitializeComponent();
         }
