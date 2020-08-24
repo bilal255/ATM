@@ -1,0 +1,26 @@
+E:\4th semester\atmUI\atmUI\bin\Debug\atmUI.exe.config
+E:\4th semester\atmUI\atmUI\bin\Debug\atmUI.exe
+E:\4th semester\atmUI\atmUI\bin\Debug\atmUI.pdb
+E:\4th semester\atmUI\atmUI\obj\Debug\atmUI.csprojAssemblyReference.cache
+E:\4th semester\atmUI\atmUI\obj\Debug\atmUI.Form1.resources
+E:\4th semester\atmUI\atmUI\obj\Debug\atmUI.Properties.Resources.resources
+E:\4th semester\atmUI\atmUI\obj\Debug\atmUI.csproj.GenerateResource.cache
+E:\4th semester\atmUI\atmUI\obj\Debug\atmUI.csproj.CoreCompileInputs.cache
+E:\4th semester\atmUI\atmUI\obj\Debug\atmUI.exe
+E:\4th semester\atmUI\atmUI\obj\Debug\atmUI.pdb
+E:\ATM-master\atmUI\atmUI\bin\Debug\atmUI.exe.config
+E:\ATM-master\atmUI\atmUI\bin\Debug\atmUI.exe
+E:\ATM-master\atmUI\atmUI\bin\Debug\atmUI.pdb
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.csprojAssemblyReference.cache
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form1.resources
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Properties.Resources.resources
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.csproj.GenerateResource.cache
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.csproj.CoreCompileInputs.cache
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.exe
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.pdb
+E:\ATM-master\atmUI\atmUI\bin\Debug\Bunifu_UI_v1.52.dll
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.csproj.CopyComplete
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form2.resources
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form3.resources
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form4.resources
+E:\ATM-master\atmUI\atmUI\obj\Debug\atmUI.Form5.resources
