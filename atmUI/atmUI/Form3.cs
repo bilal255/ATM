@@ -136,5 +136,21 @@ namespace atmUI
             ClosePicBox.BackColor = Color.Transparent;
         }
 
+        private void BackPicBox_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PinForm p = new PinForm();
+            p.Show();
+        }
+
+        private void BackPicBox_MouseHover(object sender, EventArgs e)
+        {
+            BackPicBox.BackColor = Color.DarkSlateGray;
+        }
+
+        private void BackPicBox_MouseLeave(object sender, EventArgs e)
+        {
+            BackPicBox.BackColor = Color.Transparent;
+        }
     }
 }

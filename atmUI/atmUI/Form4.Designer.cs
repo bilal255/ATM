@@ -42,10 +42,12 @@
             this.MinPicBox = new System.Windows.Forms.PictureBox();
             this.ClosePicBox = new System.Windows.Forms.PictureBox();
             this.MaxPicBox = new System.Windows.Forms.PictureBox();
+            this.BackPicBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -164,6 +166,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(55)))));
+            this.panel1.Controls.Add(this.BackPicBox);
             this.panel1.Controls.Add(this.MinPicBox);
             this.panel1.Controls.Add(this.ClosePicBox);
             this.panel1.Controls.Add(this.MaxPicBox);
@@ -213,6 +216,20 @@
             this.MaxPicBox.MouseLeave += new System.EventHandler(this.MaxPicBox_MouseLeave);
             this.MaxPicBox.MouseHover += new System.EventHandler(this.MaxPicBox_MouseHover);
             // 
+            // BackPicBox
+            // 
+            this.BackPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(55)))));
+            this.BackPicBox.Image = ((System.Drawing.Image)(resources.GetObject("BackPicBox.Image")));
+            this.BackPicBox.Location = new System.Drawing.Point(0, 0);
+            this.BackPicBox.Name = "BackPicBox";
+            this.BackPicBox.Size = new System.Drawing.Size(36, 36);
+            this.BackPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.BackPicBox.TabIndex = 9;
+            this.BackPicBox.TabStop = false;
+            this.BackPicBox.Click += new System.EventHandler(this.BackPicBox_Click);
+            this.BackPicBox.MouseLeave += new System.EventHandler(this.BackPicBox_MouseLeave);
+            this.BackPicBox.MouseHover += new System.EventHandler(this.BackPicBox_MouseHover);
+            // 
             // QueryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -239,6 +256,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,5 +277,6 @@
         private System.Windows.Forms.PictureBox MinPicBox;
         private System.Windows.Forms.PictureBox ClosePicBox;
         private System.Windows.Forms.PictureBox MaxPicBox;
+        private System.Windows.Forms.PictureBox BackPicBox;
     }
 }
