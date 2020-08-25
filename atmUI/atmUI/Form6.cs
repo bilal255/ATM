@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace atmUI
 {
-    public partial class Form5 : Form
+    public partial class SignupForm : Form
     {
-        public Form5()
+        public SignupForm()
         {
             InitializeComponent();
-        }
-
-        private void yesButton_MouseHover(object sender, EventArgs e)
-        {
-            yesButton.BackColor = Color.DarkSlateGray;
-        }
-
-        private void yesButton_MouseLeave(object sender, EventArgs e)
-        {
-            yesButton.BackColor = Color.DarkGray;
         }
 
         private void MinPicBox_MouseHover(object sender, EventArgs e)
@@ -34,27 +24,7 @@ namespace atmUI
 
         private void MinPicBox_MouseLeave(object sender, EventArgs e)
         {
-            MinPicBox.BackColor = Color.DarkGray;
-        }
-
-        private void MaxPicBox_MouseHover(object sender, EventArgs e)
-        {
-            MaxPicBox.BackColor = Color.DarkSlateGray;
-        }
-
-        private void MaxPicBox_MouseLeave(object sender, EventArgs e)
-        {
-            MaxPicBox.BackColor = Color.DarkGray;
-        }
-
-        private void ClosePicBox_MouseHover(object sender, EventArgs e)
-        {
-            ClosePicBox.BackColor = Color.DarkSlateGray;
-        }
-
-        private void ClosePicBox_MouseLeave(object sender, EventArgs e)
-        {
-            ClosePicBox.BackColor = Color.DarkGray;
+            MinPicBox.BackColor = Color.Transparent;
         }
 
         private void MaxPicBox_Click(object sender, EventArgs e)
@@ -104,26 +74,39 @@ namespace atmUI
             this.Close();
         }
 
-        private void Form5_FormClosed(object sender, FormClosedEventArgs e)
+        private void SignupForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Dispose();
         }
 
-        private void yesButton_Click(object sender, EventArgs e)
+        private void MaxPicBox_MouseHover(object sender, EventArgs e)
         {
-            this.Hide();
-            QueryForm q = new QueryForm();
-            q.Show();
+            MaxPicBox.BackColor = Color.DarkSlateGray;
         }
 
-        private void noButton_MouseHover(object sender, EventArgs e)
+        private void MaxPicBox_MouseLeave(object sender, EventArgs e)
         {
-            noButton.BackColor = Color.DarkSlateGray;
+            MaxPicBox.BackColor = Color.Transparent;
         }
 
-        private void noButton_MouseLeave(object sender, EventArgs e)
+        private void ClosePicBox_MouseHover(object sender, EventArgs e)
         {
-            noButton.BackColor = Color.DarkGray;
+            ClosePicBox.BackColor = Color.DarkSlateGray;
+        }
+
+        private void ClosePicBox_MouseLeave(object sender, EventArgs e)
+        {
+            ClosePicBox.BackColor = Color.Transparent;
+        }
+
+        private void signupButton_MouseHover(object sender, EventArgs e)
+        {
+            signupButton.BackColor = Color.DarkSlateGray;
+        }
+
+        private void signupButton_MouseLeave(object sender, EventArgs e)
+        {
+            signupButton.BackColor = Color.DarkGray;
         }
     }
 }

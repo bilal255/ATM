@@ -34,22 +34,22 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.submitButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BackPicBox = new System.Windows.Forms.PictureBox();
             this.MinPicBox = new System.Windows.Forms.PictureBox();
             this.ClosePicBox = new System.Windows.Forms.PictureBox();
             this.MaxPicBox = new System.Windows.Forms.PictureBox();
-            this.BackPicBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(102, 92);
+            this.label1.Location = new System.Drawing.Point(97, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 19);
             this.label1.TabIndex = 0;
@@ -67,9 +67,10 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(296, 177);
+            this.textBox1.Location = new System.Drawing.Point(352, 235);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(113, 27);
             this.textBox1.TabIndex = 2;
@@ -77,11 +78,12 @@
             // 
             // submitButton
             // 
+            this.submitButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.submitButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.submitButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitButton.Location = new System.Drawing.Point(321, 227);
+            this.submitButton.Location = new System.Drawing.Point(368, 278);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(73, 32);
+            this.submitButton.Size = new System.Drawing.Size(80, 30);
             this.submitButton.TabIndex = 4;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = false;
@@ -101,6 +103,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 36);
             this.panel1.TabIndex = 6;
+            // 
+            // BackPicBox
+            // 
+            this.BackPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(55)))));
+            this.BackPicBox.Image = ((System.Drawing.Image)(resources.GetObject("BackPicBox.Image")));
+            this.BackPicBox.Location = new System.Drawing.Point(0, 0);
+            this.BackPicBox.Name = "BackPicBox";
+            this.BackPicBox.Size = new System.Drawing.Size(36, 36);
+            this.BackPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.BackPicBox.TabIndex = 7;
+            this.BackPicBox.TabStop = false;
+            this.BackPicBox.Click += new System.EventHandler(this.BackPicBox_Click);
+            this.BackPicBox.MouseLeave += new System.EventHandler(this.BackPicBox_MouseLeave);
+            this.BackPicBox.MouseHover += new System.EventHandler(this.BackPicBox_MouseHover);
             // 
             // MinPicBox
             // 
@@ -142,40 +158,27 @@
             this.MaxPicBox.MouseLeave += new System.EventHandler(this.MaxPicBox_MouseLeave);
             this.MaxPicBox.MouseHover += new System.EventHandler(this.MaxPicBox_MouseHover);
             // 
-            // BackPicBox
-            // 
-            this.BackPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(55)))));
-            this.BackPicBox.Image = ((System.Drawing.Image)(resources.GetObject("BackPicBox.Image")));
-            this.BackPicBox.Location = new System.Drawing.Point(0, 0);
-            this.BackPicBox.Name = "BackPicBox";
-            this.BackPicBox.Size = new System.Drawing.Size(36, 36);
-            this.BackPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.BackPicBox.TabIndex = 7;
-            this.BackPicBox.TabStop = false;
-            this.BackPicBox.Click += new System.EventHandler(this.BackPicBox_Click);
-            this.BackPicBox.MouseLeave += new System.EventHandler(this.BackPicBox_MouseLeave);
-            this.BackPicBox.MouseHover += new System.EventHandler(this.BackPicBox_MouseHover);
-            // 
             // PinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "PinForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PinForm_FormClosed);
             this.Load += new System.EventHandler(this.PinForm_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

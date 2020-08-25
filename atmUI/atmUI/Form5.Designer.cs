@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.yesButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.noButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MinPicBox = new System.Windows.Forms.PictureBox();
             this.ClosePicBox = new System.Windows.Forms.PictureBox();
@@ -47,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(81, 71);
+            this.label1.Location = new System.Drawing.Point(81, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 38);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 241);
+            this.label2.Location = new System.Drawing.Point(81, 343);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(336, 20);
             this.label2.TabIndex = 1;
@@ -67,28 +67,28 @@
             // 
             this.yesButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.yesButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yesButton.Location = new System.Drawing.Point(565, 211);
+            this.yesButton.Location = new System.Drawing.Point(565, 301);
             this.yesButton.Name = "yesButton";
             this.yesButton.Size = new System.Drawing.Size(132, 30);
             this.yesButton.TabIndex = 2;
             this.yesButton.Text = "Yes";
             this.yesButton.UseVisualStyleBackColor = false;
-            this.yesButton.Click += new System.EventHandler(this.button1_Click);
+            this.yesButton.Click += new System.EventHandler(this.yesButton_Click);
             this.yesButton.MouseLeave += new System.EventHandler(this.yesButton_MouseLeave);
             this.yesButton.MouseHover += new System.EventHandler(this.yesButton_MouseHover);
             // 
-            // button2
+            // noButton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(565, 263);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 30);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "No";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
-            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            this.noButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.noButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noButton.Location = new System.Drawing.Point(565, 378);
+            this.noButton.Name = "noButton";
+            this.noButton.Size = new System.Drawing.Size(132, 30);
+            this.noButton.TabIndex = 2;
+            this.noButton.Text = "No";
+            this.noButton.UseVisualStyleBackColor = false;
+            this.noButton.MouseLeave += new System.EventHandler(this.noButton_MouseLeave);
+            this.noButton.MouseHover += new System.EventHandler(this.noButton_MouseHover);
             // 
             // panel1
             // 
@@ -148,15 +148,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.noButton);
             this.Controls.Add(this.yesButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Form5";
             this.Text = "Form5";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form5_FormClosed);
@@ -174,7 +175,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button yesButton;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button noButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox MinPicBox;
         private System.Windows.Forms.PictureBox ClosePicBox;

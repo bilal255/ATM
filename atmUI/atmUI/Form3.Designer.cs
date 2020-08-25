@@ -34,21 +34,21 @@
             this.savButton = new System.Windows.Forms.Button();
             this.defButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BackPicBox = new System.Windows.Forms.PictureBox();
             this.MinPicBox = new System.Windows.Forms.PictureBox();
             this.ClosePicBox = new System.Windows.Forms.PictureBox();
             this.MaxPicBox = new System.Windows.Forms.PictureBox();
-            this.BackPicBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 91);
+            this.label1.Location = new System.Drawing.Point(60, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(250, 21);
             this.label1.TabIndex = 0;
@@ -56,10 +56,11 @@
             // 
             // currButton
             // 
+            this.currButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.currButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.currButton.Location = new System.Drawing.Point(510, 186);
+            this.currButton.Location = new System.Drawing.Point(510, 252);
             this.currButton.Name = "currButton";
-            this.currButton.Size = new System.Drawing.Size(172, 38);
+            this.currButton.Size = new System.Drawing.Size(170, 40);
             this.currButton.TabIndex = 1;
             this.currButton.Text = "Current";
             this.currButton.UseVisualStyleBackColor = false;
@@ -69,10 +70,11 @@
             // 
             // savButton
             // 
+            this.savButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.savButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.savButton.Location = new System.Drawing.Point(510, 252);
+            this.savButton.Location = new System.Drawing.Point(510, 325);
             this.savButton.Name = "savButton";
-            this.savButton.Size = new System.Drawing.Size(172, 38);
+            this.savButton.Size = new System.Drawing.Size(170, 40);
             this.savButton.TabIndex = 1;
             this.savButton.Text = "Savings";
             this.savButton.UseVisualStyleBackColor = false;
@@ -81,10 +83,11 @@
             // 
             // defButton
             // 
+            this.defButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.defButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.defButton.Location = new System.Drawing.Point(510, 319);
+            this.defButton.Location = new System.Drawing.Point(510, 399);
             this.defButton.Name = "defButton";
-            this.defButton.Size = new System.Drawing.Size(172, 38);
+            this.defButton.Size = new System.Drawing.Size(170, 40);
             this.defButton.TabIndex = 1;
             this.defButton.Text = "Default";
             this.defButton.UseVisualStyleBackColor = false;
@@ -103,6 +106,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 36);
             this.panel1.TabIndex = 7;
+            // 
+            // BackPicBox
+            // 
+            this.BackPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(55)))));
+            this.BackPicBox.Image = ((System.Drawing.Image)(resources.GetObject("BackPicBox.Image")));
+            this.BackPicBox.Location = new System.Drawing.Point(0, 0);
+            this.BackPicBox.Name = "BackPicBox";
+            this.BackPicBox.Size = new System.Drawing.Size(36, 36);
+            this.BackPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.BackPicBox.TabIndex = 8;
+            this.BackPicBox.TabStop = false;
+            this.BackPicBox.Click += new System.EventHandler(this.BackPicBox_Click);
+            this.BackPicBox.MouseLeave += new System.EventHandler(this.BackPicBox_MouseLeave);
+            this.BackPicBox.MouseHover += new System.EventHandler(this.BackPicBox_MouseHover);
             // 
             // MinPicBox
             // 
@@ -144,26 +161,12 @@
             this.MaxPicBox.MouseLeave += new System.EventHandler(this.MaxPicBox_MouseLeave);
             this.MaxPicBox.MouseHover += new System.EventHandler(this.MaxPicBox_MouseHover);
             // 
-            // BackPicBox
-            // 
-            this.BackPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(55)))));
-            this.BackPicBox.Image = ((System.Drawing.Image)(resources.GetObject("BackPicBox.Image")));
-            this.BackPicBox.Location = new System.Drawing.Point(0, 0);
-            this.BackPicBox.Name = "BackPicBox";
-            this.BackPicBox.Size = new System.Drawing.Size(36, 36);
-            this.BackPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.BackPicBox.TabIndex = 8;
-            this.BackPicBox.TabStop = false;
-            this.BackPicBox.Click += new System.EventHandler(this.BackPicBox_Click);
-            this.BackPicBox.MouseLeave += new System.EventHandler(this.BackPicBox_MouseLeave);
-            this.BackPicBox.MouseHover += new System.EventHandler(this.BackPicBox_MouseHover);
-            // 
             // AccForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.defButton);
             this.Controls.Add(this.savButton);
@@ -172,14 +175,15 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "AccForm";
             this.Text = "Form3";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AccForm_FormClosed);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

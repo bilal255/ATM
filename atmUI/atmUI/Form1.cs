@@ -121,5 +121,12 @@ namespace atmUI
             PinForm pin = new PinForm();
             pin.Show();
         }
+
+        private void SignupLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            SignupForm s = new SignupForm();
+            s.Show();
+        }
     }
 }

@@ -40,3 +40,4 @@ E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.LoginForm.resources
 E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.PinForm.resources
 E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.AccForm.resources
 E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.QueryForm.resources
+E:\DBMS Project\ATM\atmUI\atmUI\obj\Debug\atmUI.SignupForm.resources
