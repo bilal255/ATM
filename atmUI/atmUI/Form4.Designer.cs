@@ -35,9 +35,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.balButton = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.otherButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MinPicBox = new System.Windows.Forms.PictureBox();
             this.ClosePicBox = new System.Windows.Forms.PictureBox();
@@ -67,6 +67,8 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Rs. 1000";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // button2
             // 
@@ -78,6 +80,8 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Rs. 2000";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // button3
             // 
@@ -89,6 +93,8 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "Rs. 3000";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // button4
             // 
@@ -100,6 +106,8 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "Rs. 4000";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // button5
             // 
@@ -111,17 +119,21 @@
             this.button5.TabIndex = 1;
             this.button5.Text = "Rs. 5000";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
             // 
-            // button6
+            // balButton
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(424, 241);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(158, 36);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Balance Inquiry";
-            this.button6.UseVisualStyleBackColor = false;
+            this.balButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.balButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.balButton.Location = new System.Drawing.Point(424, 241);
+            this.balButton.Name = "balButton";
+            this.balButton.Size = new System.Drawing.Size(158, 36);
+            this.balButton.TabIndex = 1;
+            this.balButton.Text = "Balance Inquiry";
+            this.balButton.UseVisualStyleBackColor = false;
+            this.balButton.MouseLeave += new System.EventHandler(this.balButton_MouseLeave);
+            this.balButton.MouseHover += new System.EventHandler(this.balButton_MouseHover);
             // 
             // button7
             // 
@@ -133,17 +145,21 @@
             this.button7.TabIndex = 1;
             this.button7.Text = "Rs. 10000";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
+            this.button7.MouseHover += new System.EventHandler(this.button7_MouseHover);
             // 
-            // button8
+            // otherButton
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(424, 199);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(158, 36);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "Other Amount";
-            this.button8.UseVisualStyleBackColor = false;
+            this.otherButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.otherButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherButton.Location = new System.Drawing.Point(424, 199);
+            this.otherButton.Name = "otherButton";
+            this.otherButton.Size = new System.Drawing.Size(158, 36);
+            this.otherButton.TabIndex = 1;
+            this.otherButton.Text = "Other Amount";
+            this.otherButton.UseVisualStyleBackColor = false;
+            this.otherButton.MouseLeave += new System.EventHandler(this.otherButton_MouseLeave);
+            this.otherButton.MouseHover += new System.EventHandler(this.otherButton_MouseHover);
             // 
             // panel1
             // 
@@ -166,6 +182,9 @@
             this.MinPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MinPicBox.TabIndex = 6;
             this.MinPicBox.TabStop = false;
+            this.MinPicBox.Click += new System.EventHandler(this.MinPicBox_Click);
+            this.MinPicBox.MouseLeave += new System.EventHandler(this.MinPicBox_MouseLeave);
+            this.MinPicBox.MouseHover += new System.EventHandler(this.MinPicBox_MouseHover);
             // 
             // ClosePicBox
             // 
@@ -177,6 +196,9 @@
             this.ClosePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ClosePicBox.TabIndex = 6;
             this.ClosePicBox.TabStop = false;
+            this.ClosePicBox.Click += new System.EventHandler(this.ClosePicBox_Click);
+            this.ClosePicBox.MouseLeave += new System.EventHandler(this.ClosePicBox_MouseLeave);
+            this.ClosePicBox.MouseHover += new System.EventHandler(this.ClosePicBox_MouseHover);
             // 
             // MaxPicBox
             // 
@@ -187,6 +209,9 @@
             this.MaxPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MaxPicBox.TabIndex = 6;
             this.MaxPicBox.TabStop = false;
+            this.MaxPicBox.Click += new System.EventHandler(this.MaxPicBox_Click);
+            this.MaxPicBox.MouseLeave += new System.EventHandler(this.MaxPicBox_MouseLeave);
+            this.MaxPicBox.MouseHover += new System.EventHandler(this.MaxPicBox_MouseHover);
             // 
             // QueryForm
             // 
@@ -195,10 +220,10 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.balButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.otherButton);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
@@ -209,6 +234,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "QueryForm";
             this.Text = "Form4";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.QueryForm_FormClosed);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).EndInit();
@@ -226,9 +252,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button balButton;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button otherButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox MinPicBox;
         private System.Windows.Forms.PictureBox ClosePicBox;

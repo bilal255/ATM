@@ -96,6 +96,8 @@
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = false;
             this.submitButton.Click += new System.EventHandler(this.button1_Click);
+            this.submitButton.MouseLeave += new System.EventHandler(this.submitButton_MouseLeave);
+            this.submitButton.MouseHover += new System.EventHandler(this.submitButton_MouseHover);
             // 
             // panel1
             // 
@@ -118,6 +120,9 @@
             this.MinPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MinPicBox.TabIndex = 6;
             this.MinPicBox.TabStop = false;
+            this.MinPicBox.Click += new System.EventHandler(this.MinPicBox_Click);
+            this.MinPicBox.MouseLeave += new System.EventHandler(this.MinPicBox_MouseLeave);
+            this.MinPicBox.MouseHover += new System.EventHandler(this.MinPicBox_MouseHover);
             // 
             // ClosePicBox
             // 
@@ -129,6 +134,9 @@
             this.ClosePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ClosePicBox.TabIndex = 6;
             this.ClosePicBox.TabStop = false;
+            this.ClosePicBox.Click += new System.EventHandler(this.ClosePicBox_Click);
+            this.ClosePicBox.MouseLeave += new System.EventHandler(this.ClosePicBox_MouseLeave);
+            this.ClosePicBox.MouseHover += new System.EventHandler(this.ClosePicBox_MouseHover);
             // 
             // MaxPicBox
             // 
@@ -139,6 +147,9 @@
             this.MaxPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MaxPicBox.TabIndex = 6;
             this.MaxPicBox.TabStop = false;
+            this.MaxPicBox.Click += new System.EventHandler(this.MaxPicBox_Click);
+            this.MaxPicBox.MouseLeave += new System.EventHandler(this.MaxPicBox_MouseLeave);
+            this.MaxPicBox.MouseHover += new System.EventHandler(this.MaxPicBox_MouseHover);
             // 
             // PinForm
             // 
@@ -154,6 +165,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PinForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PinForm_FormClosed);
             this.Load += new System.EventHandler(this.PinForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).EndInit();

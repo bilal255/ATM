@@ -37,12 +37,10 @@
             this.MaxPicBox = new System.Windows.Forms.PictureBox();
             this.MinPicBox = new System.Windows.Forms.PictureBox();
             this.ClosePicBox = new System.Windows.Forms.PictureBox();
-            this.ResetPicBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ResetPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -140,24 +138,11 @@
             this.ClosePicBox.MouseLeave += new System.EventHandler(this.ClosePicBox_MouseLeave);
             this.ClosePicBox.MouseHover += new System.EventHandler(this.ClosePicBox_MouseHover);
             // 
-            // ResetPicBox
-            // 
-            this.ResetPicBox.BackColor = System.Drawing.Color.Transparent;
-            this.ResetPicBox.Image = global::atmUI.Properties.Resources.icons8_maximize_button_20;
-            this.ResetPicBox.Location = new System.Drawing.Point(701, 73);
-            this.ResetPicBox.Name = "ResetPicBox";
-            this.ResetPicBox.Size = new System.Drawing.Size(36, 36);
-            this.ResetPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ResetPicBox.TabIndex = 6;
-            this.ResetPicBox.TabStop = false;
-            this.ResetPicBox.Click += new System.EventHandler(this.ResetPicBox_Click);
-            // 
             // LoginForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ResetPicBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.textBox1);
@@ -173,7 +158,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.MaxPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ResetPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,7 +173,6 @@
         private System.Windows.Forms.PictureBox ClosePicBox;
         private System.Windows.Forms.PictureBox MaxPicBox;
         private System.Windows.Forms.PictureBox MinPicBox;
-        private System.Windows.Forms.PictureBox ResetPicBox;
     }
 }
 

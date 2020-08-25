@@ -17,13 +17,25 @@ namespace atmUI
             InitializeComponent();
         }
 
-        private void loginButton_MouseHover(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            submitButton.BackColor = Color.DarkSlateGray;
+            this.Hide();
+            AccForm Acc = new AccForm();
+            Acc.Show();
+        }
+
+        private void PinForm_Load(object sender, EventArgs e)
+        {
 
         }
 
-        private void loginButton_MouseLeave(object sender, EventArgs e)
+        private void submitButton_MouseHover(object sender, EventArgs e)
+        {
+            submitButton.BackColor = Color.DarkSlateGray;
+        }
+
+        private void submitButton_MouseLeave(object sender, EventArgs e)
         {
             submitButton.BackColor = Color.DarkGray;
         }
@@ -75,7 +87,7 @@ namespace atmUI
             this.Close();
         }
 
-        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void PinForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Dispose();
         }
@@ -85,10 +97,6 @@ namespace atmUI
             MinPicBox.BackColor = Color.DarkSlateGray;
         }
 
-        private void MinPicBox_MouseLeave(object sender, EventArgs e)
-        {
-            MinPicBox.BackColor = Color.Transparent;
-        }
 
         private void MaxPicBox_MouseHover(object sender, EventArgs e)
         {
@@ -100,6 +108,11 @@ namespace atmUI
             MaxPicBox.BackColor = Color.Transparent;
         }
 
+        private void MinPicBox_MouseLeave(object sender, EventArgs e)
+        {
+            MinPicBox.BackColor = Color.Transparent;
+        }
+
         private void ClosePicBox_MouseHover(object sender, EventArgs e)
         {
             ClosePicBox.BackColor = Color.DarkSlateGray;
@@ -108,17 +121,6 @@ namespace atmUI
         private void ClosePicBox_MouseLeave(object sender, EventArgs e)
         {
             ClosePicBox.BackColor = Color.Transparent;
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AccForm Acc = new AccForm();
-            Acc.Show();
-        }
-
-        private void PinForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

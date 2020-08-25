@@ -115,20 +115,6 @@ namespace atmUI
             ClosePicBox.BackColor = Color.Transparent;
         }
 
-        private void ResetPicBox_Click(object sender, EventArgs e)
-        {
-            if(ResetPicBox.Visible == true)
-            {
-                MaxPicBox.Visible = true;
-                ResetPicBox.Visible = false;
-            }
-            else if(MaxPicBox.Visible == true)
-            {
-                ResetPicBox.Visible = true;
-                MaxPicBox.Visible = false;
-            }
-        }
-
         private void loginButton_Click(object sender, EventArgs e)
         {
             this.Hide();

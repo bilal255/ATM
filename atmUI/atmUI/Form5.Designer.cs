@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.yesButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MinPicBox = new System.Windows.Forms.PictureBox();
@@ -63,17 +63,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Would you like to make another transaction?";
             // 
-            // button1
+            // yesButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(565, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 30);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Yes";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.yesButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.yesButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yesButton.Location = new System.Drawing.Point(565, 211);
+            this.yesButton.Name = "yesButton";
+            this.yesButton.Size = new System.Drawing.Size(132, 30);
+            this.yesButton.TabIndex = 2;
+            this.yesButton.Text = "Yes";
+            this.yesButton.UseVisualStyleBackColor = false;
+            this.yesButton.Click += new System.EventHandler(this.button1_Click);
+            this.yesButton.MouseLeave += new System.EventHandler(this.yesButton_MouseLeave);
+            this.yesButton.MouseHover += new System.EventHandler(this.yesButton_MouseHover);
             // 
             // button2
             // 
@@ -85,6 +87,8 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "No";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // panel1
             // 
@@ -107,6 +111,9 @@
             this.MinPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MinPicBox.TabIndex = 6;
             this.MinPicBox.TabStop = false;
+            this.MinPicBox.Click += new System.EventHandler(this.MinPicBox_Click);
+            this.MinPicBox.MouseLeave += new System.EventHandler(this.MinPicBox_MouseLeave);
+            this.MinPicBox.MouseHover += new System.EventHandler(this.MinPicBox_MouseHover);
             // 
             // ClosePicBox
             // 
@@ -118,6 +125,9 @@
             this.ClosePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ClosePicBox.TabIndex = 6;
             this.ClosePicBox.TabStop = false;
+            this.ClosePicBox.Click += new System.EventHandler(this.ClosePicBox_Click);
+            this.ClosePicBox.MouseLeave += new System.EventHandler(this.ClosePicBox_MouseLeave);
+            this.ClosePicBox.MouseHover += new System.EventHandler(this.ClosePicBox_MouseHover);
             // 
             // MaxPicBox
             // 
@@ -128,6 +138,9 @@
             this.MaxPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MaxPicBox.TabIndex = 6;
             this.MaxPicBox.TabStop = false;
+            this.MaxPicBox.Click += new System.EventHandler(this.MaxPicBox_Click);
+            this.MaxPicBox.MouseLeave += new System.EventHandler(this.MaxPicBox_MouseLeave);
+            this.MaxPicBox.MouseHover += new System.EventHandler(this.MaxPicBox_MouseHover);
             // 
             // Form5
             // 
@@ -138,7 +151,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.yesButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,6 +159,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form5_FormClosed);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MinPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClosePicBox)).EndInit();
@@ -159,7 +173,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button yesButton;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox MinPicBox;
